@@ -1,2 +1,2 @@
 # learn-shell
-we are learning shell scripting  from scratch 
+we are learning shell scripting  from scratch .
