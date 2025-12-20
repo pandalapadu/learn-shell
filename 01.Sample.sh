@@ -1,3 +1,3 @@
 ls
-la -ltr
+ls -ltr
 pwd
