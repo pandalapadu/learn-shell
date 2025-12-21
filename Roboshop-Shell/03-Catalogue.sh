@@ -1,3 +1,9 @@
+#mongo client installed we have to setup MongoDB repo and install mongodb-client
+cp 03.mongodb-client-ForCatalogue /etc/yum.repos.d/mongo.repo
+
+#Setup SystemD Catalogue Service
+cp 03.catalogue.service /etc/systemd/system/catalogue.service
+
 #Install NodeJS, By default NodeJS 16 is available, We would like to enable 20 version and install list.
 dnf module disable nodejs -y
 dnf module enable nodejs:20 -y
@@ -15,8 +21,7 @@ unzip /tmp/catalogue.zip
 #Lets download the dependencies.
 cd /app
 npm install
-#Setup SystemD Catalogue Service
-cp 03.catalogue.service /etc/systemd/system/catalogue.service
+
 
 #Load the service.
 systemctl daemon-reload
@@ -25,9 +30,7 @@ systemctl daemon-reload
 systemctl enable catalogue
 systemctl start catalogue
 
-#mongo client installed we have to setup MongoDB repo and install mongodb-client
 
-cp 03.mongodb-client-ForCatalogue /etc/yum.repos.d/mongo.repo
 #install mongodb-client
 dnf install mongodb-mongosh -y
 #Load Master Data of the List of products we want to sell and their quantity information also there in the same master data.
