@@ -31,4 +31,4 @@ cp 03.mongodb-client /etc/yum.repos.d/mongo.repo
 #install mongodb-client
 dnf install mongodb-mongosh -y
 #Load Master Data of the List of products we want to sell and their quantity information also there in the same master data.
-mongosh --host MONGODB-SERVER-IPADDRESS </app/db/master-data.js
+mongosh --host mongodb-dev.azdevopsvenkat.site </app/db/master-data.js
