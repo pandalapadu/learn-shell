@@ -27,7 +27,7 @@ systemctl start catalogue
 
 #mongo client installed we have to setup MongoDB repo and install mongodb-client
 
-cp 03.mongodb-client /etc/yum.repos.d/mongo.repo
+cp 03.mongodb-client-ForCatalogue /etc/yum.repos.d/mongo.repo
 #install mongodb-client
 dnf install mongodb-mongosh -y
 #Load Master Data of the List of products we want to sell and their quantity information also there in the same master data.
