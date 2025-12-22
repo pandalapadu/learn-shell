@@ -1,0 +1,3 @@
+ls
+ls -ltra
+pwd
