@@ -17,7 +17,8 @@ rm -rf /app
 #Lets setup an app directory.
 mkdir /app
 #Download the application code to created app directory.
-rm -rf /tmp/catalogue.zip
+rm -rf /tmp/
+.zip
 curl -o /tmp/catalogue.zip https://roboshop-artifacts.s3.amazonaws.com/catalogue-v3.zip
 cd /app
 unzip /tmp/catalogue.zip
