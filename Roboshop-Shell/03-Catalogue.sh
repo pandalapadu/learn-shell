@@ -1,4 +1,4 @@
-#mongo client installed we have to setup MongoDB repo and install mongodb-client
+#mongo client installed we have to setup MongoDB repo and install mongo.repo
 cp 03.mongodb-client-ForCatalogue /etc/yum.repos.d/mongo.repo
 
 #Setup SystemD Catalogue Service
@@ -35,7 +35,7 @@ systemctl enable catalogue
 systemctl start catalogue
 
 
-#install mongodb-client
+#install mongo.repo
 dnf install mongodb-mongosh -y
 #Load Master Data of the List of products we want to sell and their quantity information also there in the same master data.
 mongosh --host mongodb-dev.azdevopsvenkat.site </app/db/master-data.js
